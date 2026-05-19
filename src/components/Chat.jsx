@@ -170,7 +170,7 @@ useEffect(() => {
 
       const response =
         await fetch(
-          `http://localhost:8000/rooms/${activeRoom.id}/invite`,
+          `${import.meta.env.VITE_API_URL}/rooms/${activeRoom.id}/invite`,
           {
             method: "POST",
 
@@ -274,7 +274,7 @@ useEffect(() => {
 
     <div className="chat">
 
-      {/* HEADER */}
+    
       <div className="chat-header">
 
         <div className="chat-room-icon">
